@@ -1,0 +1,3 @@
+[submodule "ROS-Tutorials2"]
+	path = ROS-Tutorials2
+	url = https://github.com/UTRA-ART/ROS-Tutorials.git
