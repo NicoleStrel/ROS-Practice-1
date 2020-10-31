@@ -29,4 +29,11 @@
         <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
     </group>
 
+    <!-- moter -->
+    <node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering">
+        <param name="default_topic" value="/$(arg robot_ns)/cmd_vel"/> 
+    </node>
+
+    <!-- rviz -->
+    <include file="$(find description)/launch/view_robot.launch"/>
 </launch>
